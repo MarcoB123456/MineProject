@@ -1,0 +1,32 @@
+#locations {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0 10px 0;
+    background-color: lightgray;
+}
+
+#mine-button {
+    background: red;
+}
+
+#crafting-button {
+    background-color: gold;
+}
+
+#store-button {
+    background-color: blue;
+}
+
+.location-button {
+    width: 30%;
+    height: 60px;
+    border: black 2px solid;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: black;
+    font-size: 30px;
+}
