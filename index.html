@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>MineProject</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" type="text/css" href="styles/location.css" />
-    <link rel="stylesheet" type="text/css" href="styles/header.css" />
-    <script src="scripts/location.js" type="text/javascript"></script>
-    <base href="MineProject/"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/location.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/header.css"/>
+    <script src="js/location.js" type="text/javascript"></script>
+    <script src="js/mine.js" type="text/javascript"></script>
+    <script src="js/store.js" type="text/javascript"></script>
+    <script src="js/crafting.js" type="text/javascript"></script>
+    <script src="js/resources.js" type="text/javascript"></script>
+    <script src="main.js"></script>
 </head>
 <body>
 <div id="header">
@@ -16,13 +20,14 @@
     <span>Settings</span>
 </div>
 <div id="locations">
-    <a id="mine-button" class="location-button" href="pages/mine.html">Mine</a>
-    <a id="crafting-button" class="location-button">Crafting</a>
-    <a id="store-button" class="location-button">Store</a>
+    <button id="mine-button" class="location-button" onclick="openMine()">Mine</button>
+    <button id="crafting-button" class="location-button" onclick="openCrafting()">Crafting</button>
+    <button id="store-button" class="location-button" onclick="openStore()">Store</button>
 </div>
 
-<h1 id="text"> Hello world </h1>
+<div id="game-screen">
+</div>
 
-<script src="main.js"></script>
+
 </body>
 </html>

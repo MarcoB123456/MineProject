@@ -1,6 +1,15 @@
 let number = 0;
 
-setInterval(setValue, 1000)
+setInterval(incrementResources, 1000)
+
+window.onload = init;
+
+function init() {
+    initResources()
+    initMine()
+    initStore()
+    initCrafting()
+}
 
 function setValue() {
     let element = document.getElementById("text");
